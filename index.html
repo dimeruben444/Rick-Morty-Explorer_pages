@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick & Morty Explorer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    
+    <script type="module" crossorigin src="/assets/index-rhyoIhhF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-edhHbYdq.css">
+  </head>
+  <body>
+    <header class="header">
+            <h1 class="logo">RICK & MORTY</h1>
+            <p class="tagline">Interdimensional Explorer</p>
+
+            <nav class="nav">
+                <button class="nav-btn active" data-view="characters" id="btn-ch">
+                    Personajes
+                </button>
+                <button class="nav-btn" data-view="episodes" id="btn-ep">
+                    Episodios
+                </button>
+                <button class="nav-btn" data-view="favorites" id="btn-fav">
+                    Favoritos
+                    <span class="count" id="count-fav" >0</span>
+                </button>
+            </nav>
+
+            <div id="explorer">
+              <form action="" >
+                <input type="text" id="search" placeholder="Buscar...">
+                <select name="status" id="filtro">
+                  <option value="">-- Selecciona una opción --</option>
+                  <option value="Alive">Alive</option>
+                  <option value="Dead">Dead</option>
+                  <option value="Unknown">Unknown</option>
+
+                </select>
+              </form>
+            </div>
+        </header>
+
+        
+    <div id="app" class="grid"></div>
+
+    
+      
+    </div>
+
+
+    <!-- 
+        <div class="card">
+          
+          <div class="img-container">
+            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+            <button class="status"></button>
+          </div>
+          <div class="info-container">
+            <h3 class="character-name">Rick</h3>
+            <p class="character-specie">Human - male</p>
+            <p class="character-location">Citandel of Ricks </p>
+          </div>
+        </div>
+    -->
+    <div id="pagination">
+      <button id="anterior">Anterior</button>
+      <div id="paginfo"></div>
+      <button id="siguiente">Siguiente</button>
+    </div>
+
+    <div id="overlay"></div> 
+   <!--    <div class="overlay-container">
+      <div class="overlay-img-container">
+                <button id="close-overlay">X</button>
+                <img src= "https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                
+      </div>
+      <section class="detail-info-container">
+                
+        <article>
+          <h3 class="character-name">${personaje.name}</h3>
+          <h4 class="info-tittle">Información</h4>
+          <div class="informacion">
+            <div>
+              <h5>ESTADO</h5>
+              <p>${personaje.status}</p>
+            </div>
+            <div>
+              <h5>ESPECIE</h5>
+              <p>${personaje.species}</p>
+            </div>
+            <div>
+              <h5>GENERO</h5>
+              <p>${personaje.gender}</p>
+            </div>
+            <div>
+              <h5>ORIGEN</h5>
+              <p>${personaje.origin}</p>
+            </div>
+            <div>
+              <h5>UBICACION</h5>
+              <p>${personaje.location}</p>
+            </div>
+          </div>
+        </article>
+
+        </article class="episodes">
+          <h4>Apariciones (${personaje.episode.length})</h4>
+          <div>${episodio.name}</div>
+        <article>
+                
+      </section>
+    </div>-->
+
+
+    
+
+
+
+
+</body>
+</html>
